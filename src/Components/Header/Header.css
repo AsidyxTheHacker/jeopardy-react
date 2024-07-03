@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.557);
+    height: 8vh;
+    min-height: 40px;
+    width: 100%;
+}
+
+img {
+    margin: 0 1em;
+}
+
+.logo {
+    min-height: 40px;
+    height: 100%;
+}
+
+.volume {
+    cursor: pointer;
+    min-height: 40px;
+    height: 50%;
+}
