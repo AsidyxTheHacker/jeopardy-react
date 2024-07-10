@@ -1,17 +1,20 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
     background-color: black;
 }
 
 #vid {
     opacity: .5;
     height: 100vh;
-    width: 100vw;
     object-fit: cover;
     position: fixed;
     bottom: 0;
     z-index: -3;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
