@@ -1,0 +1,9 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1 / 7;
+}
+
+.column .card:nth-child(1) {
+    content: "POOP";
+}

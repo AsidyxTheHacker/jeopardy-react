@@ -15,8 +15,7 @@ export default function Header() {
         } else {
             setVolume(true)
         }
-        console.log(volume)
-    }
+    };
 
     return (
         <div className="header">
