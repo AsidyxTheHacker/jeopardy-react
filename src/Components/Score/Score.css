@@ -15,11 +15,10 @@
     transition: .15s ease;
 }
 
-.score-card p {
+.score-card p, .score-card input {
     margin: 0;
     text-align: center;
-    width: 14vw;
-    min-width: 60px;
+    width: 20vw;
     box-shadow: rgba(0, 0, 0, 0.714) inset -1px -1px 12px;
 }
 
@@ -33,15 +32,19 @@
     background-color: #172bff;
     font-weight: bold;
     padding: 1vh;
-    font-size: calc(12px + 2vw);
+    font-size: calc(13px + 2vw);
     text-shadow: rgba(0, 0, 0, 0.629) 1px 1px 10px;
 }
 
 .name {
     background-image: linear-gradient(#0013f0, #000fb8);
     padding: 2.5vh 1vh;
-    font-size: calc(12px + 3vw);
+    font-size: calc(12px + 2vw);
     font-family: Handwriting;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .selected {

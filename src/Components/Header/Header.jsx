@@ -7,7 +7,6 @@ import { useState } from 'react';
 export default function Header() {
 
     const [volume, setVolume] = useState(true);
-    console.log(volume)
 
     function changeVolume() {
         if(volume) {

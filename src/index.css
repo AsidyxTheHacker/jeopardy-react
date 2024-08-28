@@ -5,8 +5,9 @@ body {
 }
 
 #vid {
-    opacity: .5;
+    opacity: .6;
     height: 100vh;
+    width: 100vw;
     object-fit: cover;
     position: fixed;
     bottom: 0;

@@ -1,3 +1,5 @@
 .category {
     color: white;
+    border-bottom: solid black 4px;
+    cursor: default;
 }

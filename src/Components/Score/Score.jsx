@@ -1,25 +1,31 @@
+import { useEffect } from 'react';
 import './Score.css';
+import { useState } from 'react';
 
-export default function Score({ score, name, id }) {
+export default function Score({ score, id }) {
 
-    let selected = id;
+    const [selected, setSelected] = useState(null);
+
+    useEffect(() => {
+        setSelected(document.getElementById(`user${id}`));
+    }, [selected]);
     
     function scoreSelect() {
+
         let scores = document.querySelectorAll('.score-card');
         scores.forEach(s => s.classList.remove('selected'));
+        selected.classList.add('selected');
 
-        switch(selected) {
-            case "1": document.getElementById('user1').classList.add('selected'); break;
-            case "2": document.getElementById('user2').classList.add('selected'); break;
-            case "3": document.getElementById('user3').classList.add('selected'); break;
-        };
+        document.querySelectorAll('.question').forEach((q) => {
+            q.classList.remove('card-used');
+        });
     };
 
     return (
         <div className="score-card" id={'user' + id} onClick={() => scoreSelect()}>
-            <p className="score">{score}</p>
+            <p className="score">${score}</p>
             <div className="divider"></div>
-            <p className="name">{name}</p>
+            <input placeholder='type name...' maxLength={9} className="name"></input>
         </div>
-    )
+    );
 };
