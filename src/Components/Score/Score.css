@@ -8,7 +8,7 @@
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    margin: 2em .5em;
+    margin: calc(2vw + 8px) .5em;
     border: solid goldenrod 3px;
     box-shadow: rgba(0, 0, 0, 0.51) 2px 2px 10px;
     cursor: pointer;
@@ -50,10 +50,4 @@
 .selected {
     box-shadow: rgb(255, 224, 49) 0 0 32px;
     transform: scale(1.1);
-}
-
-@media (max-width: 600px) {
-    .score-card {
-        margin: 0 1em;
-    }
 }

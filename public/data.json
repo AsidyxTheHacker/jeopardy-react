@@ -1,3 +1,7 @@
 [{
-    "category": ["geography", "math", "pop culture", "video games", "music", "movies", "animals", "television", "biology", "misc.", "technology", "football", "food", "fashion", "timmy time"]
+    "category": ["geography", "math", "pop culture", "video games", "music", "movies", "animals", "television", "biology", "misc.", "tech", "football", "food", "fashion", "timmy time"],
+    "Geography": {
+        "question_100": "This continent contains Canada",
+        "answer_100": "North America"
+    }
 }]

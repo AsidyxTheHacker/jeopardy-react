@@ -5,14 +5,16 @@ import data from '../../../public/data.json';
 
 export default function BoardContainer() {
 
+    let array = data[0].category
+
     setTimeout(() => {
         data[0].category.sort(() => Math.random() - 0.5);
-        document.querySelector('#column1 .category-title').innerText = data[0].category[0];
-        document.querySelector('#column2 .category-title').innerText = data[0].category[1];
-        document.querySelector('#column3 .category-title').innerText = data[0].category[2];
-        document.querySelector('#column4 .category-title').innerText = data[0].category[3];
-        document.querySelector('#column5 .category-title').innerText = data[0].category[4];
-    }, 100);
+        document.querySelector('#column1 .category-title').innerText = array[0];
+        document.querySelector('#column2 .category-title').innerText = array[1];
+        document.querySelector('#column3 .category-title').innerText = array[2];
+        document.querySelector('#column4 .category-title').innerText = array[3];
+        document.querySelector('#column5 .category-title').innerText = array[4];
+    }, 1);
 
     return (
         <div className="board-container">

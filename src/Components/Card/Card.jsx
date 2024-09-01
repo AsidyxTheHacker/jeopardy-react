@@ -1,4 +1,5 @@
 import './Card.css';
+import data from '../../../public/data.json';
 
 export default function Card({ text /* text = point value */ }) {
 
@@ -15,6 +16,10 @@ export default function Card({ text /* text = point value */ }) {
         }, 400);
 
         document.querySelector('.modal-title').innerText = `${text} POINT QUESTION`;
+        document.querySelector('.modal-category').innerText = event.target.parentNode.firstChild.innerText;
+        document.querySelector('.modal-question').innerText = '';
+
+        console.log(data[0].Geography.question_100)
     };
 
     return (

@@ -32,4 +32,12 @@
     font-size: calc(3vw + 12px);
     padding: .2em .5em;
     border: solid rgb(237, 187, 62) calc(.2vw + 4px);
+    margin-bottom: .2em;
+}
+
+.modal-category {
+    color: white;
+    font-size: calc(2vw + 12px);
+    margin-top: 0;
+    text-shadow: black 2px 2px 0;
 }

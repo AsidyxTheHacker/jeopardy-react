@@ -17,6 +17,7 @@ export default function Modal() {
     return (
         <div className="modal modal-hidden">
             <h1 className='modal-title'></h1>
+            <h2 className='modal-category'></h2>
             <p className="modal-question"></p>
             <button onClick={displayModal}>HIDE MODAL</button>
         </div>

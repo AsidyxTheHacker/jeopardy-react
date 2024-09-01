@@ -2,4 +2,20 @@
     color: white;
     border-bottom: solid black 4px;
     cursor: default;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: calc(2vw + 5px);
+    text-shadow: black 3px 3px 0;
+}
+
+.category-title {
+    margin: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .category {
+        max-width: 67px;
+        text-shadow: black 2px 2px 0;
+    }
 }
