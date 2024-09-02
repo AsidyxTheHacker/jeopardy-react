@@ -1,5 +1,5 @@
 import './Card.css';
-import data from '../../../public/data.json';
+import data from '../../assets/data.json';
 
 export default function Card({ text /* text = point value */ }) {
 
@@ -13,13 +13,15 @@ export default function Card({ text /* text = point value */ }) {
 
         setTimeout(() => {
             questions.forEach(q => { q.classList.remove('card-used') });
-        }, 400);
+        }, 300);
+
+        let category = event.target.parentNode.firstChild.innerText;
+        let question = `questions_${text}`;
+        let randomNum = Math.floor(Math.random() * 3);
 
         document.querySelector('.modal-title').innerText = `${text} POINT QUESTION`;
-        document.querySelector('.modal-category').innerText = event.target.parentNode.firstChild.innerText;
-        document.querySelector('.modal-question').innerText = '';
-
-        console.log(data[0].Geography.question_100)
+        document.querySelector('.modal-category').innerText = category;
+        document.querySelector('.modal-question').innerText = data[0][category][question][randomNum];
     };
 
     return (

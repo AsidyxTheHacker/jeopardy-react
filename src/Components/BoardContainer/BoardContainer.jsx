@@ -1,7 +1,7 @@
 import Column from '../Column/Column';
 import Modal from '../Modal/Modal';
 import './BoardContainer.css';
-import data from '../../../public/data.json';
+import data from '../../assets/data.json';
 
 export default function BoardContainer() {
 

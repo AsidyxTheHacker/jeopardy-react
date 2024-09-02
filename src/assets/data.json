@@ -1,0 +1,27 @@
+[{
+    "category": ["geography", "math", "pop culture", "video games", "music", "movies", "animals", "television", "biology", "misc.", "tech", "football", "food", "fashion", "timmy time"],
+    "Geography": {
+        "questions_100": ["This is 100pt question ONE", "This is 100pt question TWO", "This is 100pt question THREE"],
+        "answers_100": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
+        "questions_200": ["This is 200pt question ONE", "This is 200pt question TWO", "This is 200pt question THREE"],
+        "answers_200": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
+        "questions_300": ["This is 300pt question ONE", "This is 300pt question TWO", "This is 300pt question THREE"],
+        "answers_300": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
+        "questions_400": ["This is 400pt question ONE", "This is 400pt question TWO", "This is 400pt question THREE"],
+        "answers_400": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
+        "questions_500": ["This is 500pt question ONE", "This is 500pt question TWO", "This is 500pt question THREE"],
+        "answers_500": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"]
+    },
+    "Math": {
+        "questions_100": ["This is 100pt question ONE", "This is 100pt question TWO", "This is 100pt question THREE"],
+        "answers_100": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
+        "questions_200": ["This is 200pt question ONE", "This is 200pt question TWO", "This is 200pt question THREE"],
+        "answers_200": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
+        "questions_300": ["This is 300pt question ONE", "This is 300pt question TWO", "This is 300pt question THREE"],
+        "answers_300": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
+        "questions_400": ["This is 400pt question ONE", "This is 400pt question TWO", "This is 400pt question THREE"],
+        "answers_400": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
+        "questions_500": ["This is 500pt question ONE", "This is 500pt question TWO", "This is 500pt question THREE"],
+        "answers_500": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"]
+    }
+}]
