@@ -2,6 +2,7 @@ import Column from '../Column/Column';
 import Modal from '../Modal/Modal';
 import './BoardContainer.css';
 import data from '../../assets/data.json';
+import { useEffect } from 'react';
 
 export default function BoardContainer() {
 
@@ -9,7 +10,7 @@ export default function BoardContainer() {
     let dailyDoubleSFX = document.querySelector('audio');
     dailyDoubleSFX.volume = .3;
 
-    setTimeout(() => {
+    useEffect(() => {
         array.sort(() => Math.random() - 0.5);
         for (let i = 0; i < 5; i++) {
             document.querySelector(`#column${i + 1} .category-title`).innerText = array[i + 1]
@@ -24,7 +25,7 @@ export default function BoardContainer() {
             document.querySelector('.double-jeopardy-card').innerText = doubleScore;
             document.querySelector('.double-jeopardy-card').classList.add('double-jeopardy-card-used');
         })
-    }, 1);
+    }, []);
 
     return (
         <div className="board-container">

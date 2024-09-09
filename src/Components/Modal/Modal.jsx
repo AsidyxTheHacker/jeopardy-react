@@ -2,6 +2,8 @@ import './Modal.css';
 
 export default function Modal() {
 
+    let lever = false;
+
     const hideModal = () => {
         document.querySelectorAll('.modal, .answer-container').forEach(m => {
             m.classList.add('hidden');
@@ -12,6 +14,11 @@ export default function Modal() {
         document.querySelectorAll('.card').forEach(c => {
             c.classList.remove('card-selected');
         });
+
+        if (!lever) {
+            document.querySelector('.double-jeopardy-card-used').innerText = document.querySelector('.double-jeopardy-card-used').innerText / 2;
+            lever = true;
+        }
     };
 
     const revealAnswer = () => {

@@ -21,13 +21,16 @@ export default function Card({ text /* text = point value */ }) {
         let answer = `answers_${text}`;
         let randomNum = Math.floor(Math.random() * 3);
 
-        document.querySelector('.modal-title').innerText = `${text} POINT QUESTION`;
+        if (event.target.classList.contains('double-jeopardy-card')) {
+            document.querySelector('.modal-title').innerText = `DAILY DOUBLE! ${text * 2}`
+        } else {
+            document.querySelector('.modal-title').innerText = `${text} POINT QUESTION`;
+        };
+
         document.querySelector('.modal-category').innerText = category;
         document.querySelector('.modal-question').innerText = data[0][category][question][randomNum];
         document.querySelector('.modal-answer').innerText = data[0][category][answer][randomNum];
     };
-
-
 
     return (
         <div className="card card-used question" onClick={clickHandler}>{text}</div>
