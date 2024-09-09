@@ -8,7 +8,7 @@ export default function Score({ score, id }) {
     useEffect(() => {
         setSelected(document.getElementById(`user${id}`));
     }, [selected]);
-    
+
     function scoreSelect() {
 
         let scores = document.querySelectorAll('.score-card');

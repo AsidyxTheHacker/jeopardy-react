@@ -5,15 +5,25 @@ import data from '../../assets/data.json';
 
 export default function BoardContainer() {
 
-    let array = data[0].category
+    let array = data[0].category;
+    let dailyDoubleSFX = document.querySelector('audio');
+    dailyDoubleSFX.volume = .3;
 
     setTimeout(() => {
-        data[0].category.sort(() => Math.random() - 0.5);
-        document.querySelector('#column1 .category-title').innerText = array[0];
-        document.querySelector('#column2 .category-title').innerText = array[1];
-        document.querySelector('#column3 .category-title').innerText = array[2];
-        document.querySelector('#column4 .category-title').innerText = array[3];
-        document.querySelector('#column5 .category-title').innerText = array[4];
+        array.sort(() => Math.random() - 0.5);
+        for (let i = 0; i < 5; i++) {
+            document.querySelector(`#column${i + 1} .category-title`).innerText = array[i + 1]
+        }
+
+        let randomCard = Math.floor(Math.random() * 5) + 2;
+        let randomColumn = Math.floor(Math.random() * 5) + 1;
+        document.querySelector(`#column${randomColumn} .question:nth-child(${randomCard})`).classList.add('double-jeopardy-card');
+        document.querySelector('.double-jeopardy-card').addEventListener('click', () => {
+            let doubleScore = document.querySelector('.double-jeopardy-card').innerText * 2;
+            dailyDoubleSFX.play();
+            document.querySelector('.double-jeopardy-card').innerText = doubleScore;
+            document.querySelector('.double-jeopardy-card').classList.add('double-jeopardy-card-used');
+        })
     }, 1);
 
     return (

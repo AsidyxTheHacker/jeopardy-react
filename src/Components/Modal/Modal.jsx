@@ -3,9 +3,11 @@ import './Modal.css';
 export default function Modal() {
 
     const hideModal = () => {
-        document.querySelectorAll('.modal, .answer-container, .modal-answer').forEach(m => {
+        document.querySelectorAll('.modal, .answer-container').forEach(m => {
             m.classList.add('hidden');
         });
+
+        document.querySelector('.modal-answer').classList.add('center-hidden');
 
         document.querySelectorAll('.card').forEach(c => {
             c.classList.remove('card-selected');
@@ -14,10 +16,10 @@ export default function Modal() {
 
     const revealAnswer = () => {
         document.querySelectorAll('.answer-container, .modal-answer').forEach(m => {
-            m.classList.remove('hidden');
+            m.classList.remove('hidden', 'center-hidden');
         });
 
-        document.querySelector('.answer-reveal-button').classList.add('hidden');
+        document.querySelector('.answer-reveal-button').classList.add('center-hidden');
     };
 
     const answer = (o) => {
@@ -42,10 +44,10 @@ export default function Modal() {
             <p className="modal-question"></p>
             <div className="button-container">
                 <button className="answer-reveal-button" onClick={revealAnswer}>Reveal Answer</button>
-                <p className="modal-answer hidden"></p>
+                <p className="modal-answer center-hidden"></p>
                 <div className="answer-container hidden">
-                    <button className='correct-button' onClick={() => answer('+')}>Correct</button>
-                    <button className='incorrect-button' onClick={() => answer('-')}>Incorrect</button>
+                    <button className='correct-button' onClick={() => answer('+')}>✔</button>
+                    <button className='incorrect-button' onClick={() => answer('-')}>✖</button>
                 </div>
             </div>
         </div>

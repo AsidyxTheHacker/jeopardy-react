@@ -4,3 +4,7 @@
     grid-template-rows: repeat(6, 1fr);
     padding: calc(.5em + 1vw);
 }
+
+.double-jeopardy-card-used {
+    background-color: rgba(248, 199, 21, 0.349);
+}
