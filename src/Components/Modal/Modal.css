@@ -42,7 +42,8 @@
     margin-bottom: .2em;
 }
 
-.modal-category, .modal-answer {
+.modal-category,
+.modal-answer {
     color: white;
     font-size: calc(2vw + 12px);
     font-style: italic;
@@ -55,12 +56,15 @@
     color: white;
     font-weight: bold;
     text-shadow: #000430 calc(.2vw + 3px) calc(.2vw + 3px) 0;
-    font-size: calc(4vw + 16px);
+    font-size: calc(3.5vw + 16px);
     text-transform: uppercase;
     max-width: 75%;
+    margin: 0;
+    border-top: white solid 2px;
 }
 
-.answer-reveal-button {
+.answer-reveal-button,
+.close-modal-button {
     color: white;
     font-size: calc(1.3vw + 8px);
     padding: 8px calc(1vw + 4px);
@@ -69,9 +73,12 @@
     background: rgba(0, 0, 0, 0.228);
     box-shadow: rgb(178, 178, 178) 0 calc(.2vw + 1.5px) 0;
     transition: .2s ease-in-out;
+    margin: 2em 0 0 0;
+    min-width: calc(14vw + 8px);
 }
 
-.answer-reveal-button:hover {
+.answer-reveal-button:hover,
+.close-modal-button:hover {
     color: rgb(244, 196, 73);
     border: solid rgb(237, 187, 62) calc(.1vw + 1.5px);
     box-shadow: rgb(205, 162, 54) 0 0 0;
@@ -81,7 +88,7 @@
     font-weight: bold;
     border: solid rgb(237, 187, 62) calc(.1vw + 4px);
     padding: calc(.4vw + 3px);
-    margin: 1em;
+    text-transform: capitalize;
     transition: .4s ease-in-out;
 }
 
@@ -123,4 +130,9 @@
     background-color: rgb(172, 68, 68);
     border: solid rgb(112, 44, 44) calc(.1vw + 2px);
     box-shadow: rgb(94, 37, 37) 0 calc(.2vw + 2px) 0;
+}
+
+.choice-buttons {
+    display: flex;
+    gap: 2em;
 }

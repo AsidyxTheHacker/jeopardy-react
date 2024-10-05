@@ -1,27 +1,825 @@
-[{
-    "category": ["geography", "math", "pop culture", "video games", "music", "movies", "animals", "television", "biology", "misc.", "tech", "football", "food", "fashion", "timmy time"],
-    "Geography": {
-        "questions_100": ["This is 100pt question ONE", "This is 100pt question TWO", "This is 100pt question THREE"],
-        "answers_100": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
-        "questions_200": ["This is 200pt question ONE", "This is 200pt question TWO", "This is 200pt question THREE"],
-        "answers_200": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
-        "questions_300": ["This is 300pt question ONE", "This is 300pt question TWO", "This is 300pt question THREE"],
-        "answers_300": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
-        "questions_400": ["This is 400pt question ONE", "This is 400pt question TWO", "This is 400pt question THREE"],
-        "answers_400": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
-        "questions_500": ["This is 500pt question ONE", "This is 500pt question TWO", "This is 500pt question THREE"],
-        "answers_500": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"]
-    },
-    "Math": {
-        "questions_100": ["This is 100pt question ONE", "This is 100pt question TWO", "This is 100pt question THREE"],
-        "answers_100": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
-        "questions_200": ["This is 200pt question ONE", "This is 200pt question TWO", "This is 200pt question THREE"],
-        "answers_200": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
-        "questions_300": ["This is 300pt question ONE", "This is 300pt question TWO", "This is 300pt question THREE"],
-        "answers_300": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
-        "questions_400": ["This is 400pt question ONE", "This is 400pt question TWO", "This is 400pt question THREE"],
-        "answers_400": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"],
-        "questions_500": ["This is 500pt question ONE", "This is 500pt question TWO", "This is 500pt question THREE"],
-        "answers_500": ["ANSWER ONE", "ANSWER TWO", "ANSWER THREE"]
+[
+    {
+        "category": [
+            "geography",
+            "math",
+            "video games",
+            "music",
+            "movies",
+            "animals",
+            "television",
+            "human anatomy",
+            "tech",
+            "sports",
+            "food",
+            "fashion",
+            "politics"
+        ],
+        "Geography": {
+            "questions_100": [
+                "This is the name of the ocean that borders California",
+                "This is the capital of France",
+                "This is the name of the world's longest river",
+                "The amount of stars on the American flag"
+            ],
+            "answers_100": [
+                "pacific ocean",
+                "paris",
+                "the nile",
+                "fifty"
+            ],
+            "questions_200": [
+                "This is the capital of Italty",
+                "This is the most populated country in the world",
+                "This is the official language of Brazil",
+                "This is the capital of Canada"
+            ],
+            "answers_200": [
+                "rome",
+                "india",
+                "portuguese",
+                "ottawa"
+            ],
+            "questions_300": [
+                "This is the official currency of India",
+                "This continent contains the largest desert in the world",
+                "This is largest U.S. state by land mass",
+                "This country is home to Mt. Everest"
+            ],
+            "answers_300": [
+                "rupees",
+                "antarctica",
+                "alaska",
+                "nepal"
+            ],
+            "questions_400": [
+                "The defintion of 'D.C.' in Washington D.C.",
+                "This asian country is made up of 7,000 islands",
+                "This continent has the contains the most countries",
+                "This is considered the first official state in the U.S."
+            ],
+            "answers_400": [
+                "district of columbia",
+                "philippines",
+                "africa",
+                "deleware"
+            ],
+            "questions_500": [
+                "The amount of time zones in the United States",
+                "This is the smallest country in the world",
+                "This is the most populated city in the world",
+                "This is the hottest place in the world"
+            ],
+            "answers_500": [
+                "six",
+                "vatican city",
+                "tokyo",
+                "death valley"
+            ]
+        },
+        "Math": {
+            "questions_100": [
+                "The sum for any number multiplied by zero",
+                "The vertical axis on coordinate plane",
+                "The unit of measure that equates to 3 feet",
+                "This letter is found in every odd number"
+            ],
+            "answers_100": [
+                "zero",
+                "y-Axis",
+                "yard",
+                "e"
+            ],
+            "questions_200": [
+                "This is the only number to have the same amount of letters as it's amount",
+                "The term for multiplying a number to the 2nd power",
+                "This mathmatical constant has it's own day of celebration",
+                "The term for a number that equals less than zero"
+            ],
+            "answers_200": [
+                "four",
+                "square",
+                "pi",
+                "negative"
+            ],
+            "questions_300": [
+                "The term for a letter in a math equation",
+                "This calculating tool involves sliding beads along rods",
+                "This is the term for a nine-sided shape",
+                "The acronym that defines the order of operations"
+            ],
+            "answers_300": [
+                "variable",
+                "abacus",
+                "nonagon",
+                "pemdas"
+            ],
+            "questions_400": [
+                "The term for finding the average number in a set of data",
+                "The term for the longest side of a triangle",
+                "The name of an angle measuring between 90° and 180°",
+                "The term for the top number of a fraction"
+            ],
+            "answers_400": [
+                "mean",
+                "hypotenuse",
+                "obtuse",
+                "numerator"
+            ],
+            "questions_500": [
+                "The term for a number that can only be divided evenly by itself and one",
+                "This is the mathematical study of continuous change",
+                "This is the only number to not have a roman numeral",
+                "The term for a triangle with three unequal sides"
+            ],
+            "answers_500": [
+                "prime",
+                "calculus",
+                "zero",
+                "scalene"
+            ]
+        },
+        "Video Games": {
+            "questions_100": [
+                "This skateboarder had a series of video games with his name",
+                "This game uses currency called 'V-bucks'",
+                "This is the elemental type of the pokemon 'Pikachu'",
+                "This gaming console pioneered the use of motion-controls in it's gameplay"
+            ],
+            "answers_100": [
+                "tony hawk",
+                "fortnite",
+                "electric",
+                "nintendo wii"
+            ],
+            "questions_200": [
+                "The amount of differnt pieces in the game 'Tetris'",
+                "The publishing studio behind the 'Call of Duty' franchise",
+                "This is the most popular mobile game of all time",
+                "This person is the creator of the 'Super Mario' franchise"
+            ],
+            "answers_200": [
+                "seven",
+                "activision",
+                "candy crush",
+                "shigeru miyamoto"
+            ],
+            "questions_300": [
+                "This is thought to be the first video game released in 1972",
+                "This type of Pokéball can capture a Pokémon without fail",
+                "This fighting game series is known for creating the 'Hadouken'",
+                "This company created the 'Assassin's Creed' franchise"
+            ],
+            "answers_300": [
+                "pong",
+                "master ball",
+                "street fighter",
+                "ubisoft"
+            ],
+            "questions_400": [
+                "This game's protagonist is named Gordon Freeman",
+                "The company behind Minecraft is based in this country",
+                "This game's bad guys are referred to as 'The Covenant'",
+                "This video game series is home to the Umbrella Corporation"
+            ],
+            "answers_400": [
+                "half-life",
+                "sweden",
+                "halo",
+                "resident evil"
+            ],
+            "questions_500": [
+                "This is the highest selling game console to date",
+                "This is the name of the kidnapped woman in the original 'Donkey Kong'",
+                "The original name for the character 'Pac-Man'",
+                "This was the year the first 'Grand Theft Auto' game released"
+            ],
+            "answers_500": [
+                "playstation 2",
+                "pauline",
+                "puck man",
+                "1997"
+            ]
+        },
+        "Music": {
+            "questions_100": [
+                "This band is known for the song 'Wonderwall'",
+                "This singer's catalogue includes 'Bad Romance', 'Pokerface' & 'Paparazzi'",
+                "This arist is best known as the 'king of pop'",
+                "This k-pop song by Psy went viral in 2012"
+            ],
+            "answers_100": [
+                "oasis",
+                "lady gaga",
+                "michael jackson",
+                "gangnam style"
+            ],
+            "questions_200": [
+                "This band had Freddie Mercury as it's lead singer",
+                "This is the frontman for the band 'Maroon 5'",
+                "The popular term 'Rickrolling' involves playing this song",
+                "The film '8 Mile' is predominantly about this rapper's life"
+            ],
+            "answers_200": [
+                "queen",
+                "adam levine",
+                "Never Gonna Give You Up",
+                "eminem"
+            ],
+            "questions_300": [
+                "This is what the genre 'EDM' stands for",
+                "This artist is best known for their song 'Old Town Road'",
+                "This band had the most number one hit singles",
+                "This heavy metal band's frontman was Ozzy Osbourne"
+            ],
+            "answers_300": [
+                "electronic dance music",
+                "lil nas x",
+                "the beatles",
+                "black sabbath"
+            ],
+            "questions_400": [
+                "This string instrument has 47 strings",
+                "The U.S. state that Bruce Springsteen hails from",
+                "This solo artist has the most platinum singles",
+                "The year Bruno Mars released his debut single"
+            ],
+            "answers_400": [
+                "harp",
+                "new jersey",
+                "drake",
+                "2010"
+            ],
+            "questions_500": [
+                "This country has won the most Eurovision contests",
+                "This was the first music video played on MTV in the 80s",
+                "The band Gwen Stefani was apart of before going solo",
+                "This artist has won the most Grammy Awards"
+            ],
+            "answers_500": [
+                "ireland",
+                "video killed the radio star",
+                "no doubt",
+                "beyonce"
+            ]
+        },
+        "Movies": {
+            "questions_100": [
+                "This animal was the main protagonist in the movie 'Jaws'",
+                "This film series contains a character named 'Luke Skywalker'",
+                "This is the spcies of fantasy creature that Shrek is",
+                "This item is required to enter Willy Wonka's Chocolate Factory"
+            ],
+            "answers_100": [
+                "shark",
+                "star wars",
+                "ogre",
+                "golden ticket"
+            ],
+            "questions_200": [
+                "TThis actor plays Iron Man in the marvel films",
+                "This director released 'Jurassic Park' and 'Schindler's List' both in 1993",
+                "This diretor's debut picture was 'Get Out' in 2017",
+                "The female protagonist from the film series 'The Hunger Games'"
+            ],
+            "answers_200": [
+                "robert downey jr.",
+                "steven spielberg",
+                "jordan peele",
+                "katniss everdeen"
+            ],
+            "questions_300": [
+                "This is the highest grossing film of all time",
+                "This director created the film 'The Shining'",
+                "This director created the batman film 'The Dark Knight'",
+                "This was pixar studio's first animated film"
+            ],
+            "answers_300": [
+                "avatar",
+                "stanley kubrick",
+                "christopher nolan",
+                "toy story"
+            ],
+            "questions_400": [
+                "This was the sport played by the main character in the 'Raging Bull'",
+                "The cannibalistic serial killer from the film 'Silence of the Lambs'",
+                "The name of Ron Weasley's rat from the 'Harry Potter'  series",
+                "The color of pill that Neo chooses in 'The Matrix'"
+            ],
+            "answers_400": [
+                "boxing",
+                "hannibal lecter",
+                "scabbers",
+                "red"
+            ],
+            "questions_500": [
+                "This film has won the most academy awards",
+                "This was the year the movie 'Fight Club' was released",
+                "The instrument played by Miles Teller's character in 'Whiplash'",
+                "The total number of 'Rings of Power' in 'The Lord of the Rings'"
+            ],
+            "answers_500": [
+                "LOTR: Return of the King",
+                "1999",
+                "the drums",
+                "20"
+            ]
+        },
+        "Animals": {
+            "questions_100": [
+                "This is the fastest land animal in the world",
+                "This is the smallest breed of dog",
+                "This is the term to refer to baby cows",
+                "This animal can change it's color to camouflague with it's surroundings"
+            ],
+            "answers_100": [
+                "cheetah",
+                "chihuahua",
+                "calf",
+                "chameleon"
+            ],
+            "questions_200": [
+                "This rodent is responsible for the black plague",
+                "The animal that calamari comes from",
+                "This insect is known to spread lymes disease",
+                "This animal is the largest living bird"
+            ],
+            "answers_200": [
+                "rats",
+                "ocotpus",
+                "tick",
+                "ostrich"
+            ],
+            "questions_300": [
+                "This is the oldest living land animal",
+                "The total amount of legs a lobster has",
+                "This is the only country you can find Wombats",
+                "This is the largest living reptile"
+            ],
+            "answers_300": [
+                "tortoise",
+                "10",
+                "australia",
+                "crocodile"
+            ],
+            "questions_400": [
+                "The term for an animal without a backbone",
+                "This animal is the closest living relative to the T-Rex",
+                "This animal has stripes on it's fur as well as it's skin",
+                "This sea creature is known to regrow it's arms"
+            ],
+            "answers_400": [
+                "invertibrate",
+                "chicken",
+                "tigers",
+                "starfish"
+            ],
+            "questions_500": [
+                "This is the color of baby flamingos when they're born",
+                "This is the term for a group of crows",
+                "The amount of bones in a shark's body",
+                "This animal secretes pink sweat"
+            ],
+            "answers_500": [
+                "gray",
+                "a murder",
+                "zero",
+                "hippo"
+            ]
+        },
+        "Tech": {
+            "questions_100": [
+                "This tech company was co-founded by Steve Jobs",
+                "This term refers to a portable personal computer",
+                "This is currently the number one online retailer",
+                "This person is the founder of Tesla Inc. and SpaceX"
+            ],
+            "answers_100": [
+                "apple",
+                "laptop",
+                "amazon",
+                "elon musk"
+            ],
+            "questions_200": [
+                "This type of cable is used to connect your computer to the internet",
+                "This was the first decentralized cryptocurrency created in 2009",
+                "The company responsible for creating the 'Windows' operating system",
+                "The amount of megabytes that equate to 1 gigabyte"
+            ],
+            "answers_200": [
+                "ethernet",
+                "bitcoin",
+                "microsoft",
+                "1000/1024"
+            ],
+            "questions_300": [
+                "This operating system has 'Tux The Penguin' as it's mascot",
+                "The type of file that uses .wav and .mp3 extensions",
+                "The term used for Apple's video calling service",
+                "This company created the 'GeForce' software"
+            ],
+            "answers_300": [
+                "linux",
+                "sound/audio",
+                "faceTime",
+                "nvidia"
+            ],
+            "questions_400": [
+                "This company rebranded to 'Meta' in the year 2021",
+                "This search engine was founded by Larry Page and Sergey Brin in 1998",
+                "This was the most used social media of the 2010s",
+                "This is the definition of the acronym 'GUI'"
+            ],
+            "answers_400": [
+                "facebook",
+                "google",
+                "facebook",
+                "graphical user interface"
+            ],
+            "questions_500": [
+                "This website was originally entitled 'Backrub'",
+                "This is the country where Spotify was founded",
+                "The company that created the digital storefront 'Steam'",
+                "This company manufactures computer parts under the 'Radeon' series"
+            ],
+            "answers_500": [
+                "google",
+                "sweden",
+                "valve",
+                "AMD"
+            ]
+        },
+        "Human Anatomy": {
+            "questions_100": [
+                "The amount of traditional senses the human body has",
+                "This is the part of the body you'd find the cornea",
+                "This part of the body is affected by gingivitis",
+                "This is the most common eye color"
+            ],
+            "answers_100": [
+                "five",
+                "eyeball",
+                "gums",
+                "brown"
+            ],
+            "questions_200": [
+                "This bone connects your skull to your pelvis",
+                "The process of food being dissolved by stomach acid",
+                "The third molars are commonly referred to by this term",
+                "The type of blood cells that help your body fight disease"
+            ],
+            "answers_200": [
+                "spine",
+                "digestion",
+                "wisdom tooth",
+                "white blood cells"
+            ],
+            "questions_300": [
+                "This is the strongest bone in the human body",
+                "This type of blood is referred to as the universal donor",
+                "The deficiency of this vitamin can cause scurvy",
+                "This gland can only be found in males and not females"
+            ],
+            "answers_300": [
+                "femur",
+                "o negative",
+                "vitamin c",
+                "prostate"
+            ],
+            "questions_400": [
+                "The total amount of chromosomes a human has",
+                "This organ in the body creates insulin",
+                "This term refers to the outside layer of the skin",
+                "This organ in the body holds bile"
+            ],
+            "answers_400": [
+                "46",
+                "peancreas",
+                "epidermis",
+                "gallblader"
+            ],
+            "questions_500": [
+                "The percentage of water that makes up the human body",
+                "The definition of the acronym 'DNA'",
+                "The bone that humans are not born with",
+                "This is the largest organ of the human body"
+            ],
+            "answers_500": [
+                "60%",
+                "deoxyribonucleic acid",
+                "kneecaps",
+                "skin"
+            ]
+        },
+        "Television": {
+            "questions_100": [
+                "This character is known for coining the phrase 'Bazinga'",
+                "This show is known for constantly killing off the character Kenny",
+                "This 90s sitcom was starring Will Smith",
+                "This is the name of Spongebob's pink best friend"
+            ],
+            "answers_100": [
+                "sheldon cooper",
+                "south park",
+                "the fresh prince of bel-Air",
+                "patrick star"
+            ],
+            "questions_200": [
+                "This animated character is known for his love of 'Duff' beer",
+                "The show 'Breaking Bad' takes place in this state",
+                "This character is played by Steve Carell in 'The Office'",
+                "This sitom starred a nerdy character named Steve Urkel"
+            ],
+            "answers_200": [
+                "homer simpson",
+                "new mexico",
+                "michael scott",
+                "family matters"
+            ],
+            "questions_300": [
+                "This show takes place in the fictional town of Hawkins, Indiana",
+                "This show's protagonist is a sheriff named Rick Grimes",
+                "This character from 'The Boys' is a parody of superman",
+                "The host of the reality shows 'Kitchen Nightmares' and 'Hotel Hell'"
+            ],
+            "answers_300": [
+                "stranger things",
+                "the walking dead",
+                "homelander",
+                "gordon ramsay"
+            ],
+            "questions_400": [
+                "This show starred James Gandolfini as a mobster",
+                "This was the longest serving host of the gameshow 'Jeopardy'",
+                "This was the year the show 'Adventure Time' premiered",
+                "This character is known as the 'Mother of Dragons' in Game of Thrones"
+            ],
+            "answers_400": [
+                "the sopranos",
+                "alex trebek",
+                "2010",
+                "daenerys targaryen"
+            ],
+            "questions_500": [
+                "This series has the most Emmy Awards for 'Outstanding Drama Series'",
+                "This was the name of the Trinity Killer from 'Dexter'",
+                "The name of Stewie Griffin's teddy bear from 'Family Guy'",
+                "This is the total amount of seasons for the show 'Friends'"
+            ],
+            "answers_500": [
+                "game of thrones",
+                "arthur mitchell",
+                "rupert",
+                "10"
+            ]
+        },
+        "Sports": {
+            "questions_100": [
+                "The total amount of innings played in a baseball game",
+                "This is the sport that was played by David Beckham",
+                "This bowling term refers to getting three strikes in a row",
+                "The total amount of teams that compete in the NFL"
+            ],
+            "answers_100": [
+                "nine",
+                "soccer",
+                "turkey",
+                "32"
+            ],
+            "questions_200": [
+                "The total amount of rings shown in the olympics logo",
+                "The Atlanta Hawks are a team that compete in this professional sport",
+                "The total amount of holes in a full round of golf",
+                "This sport has players competing for the Stanley Cup"
+            ],
+            "answers_200": [
+                "5",
+                "basketball",
+                "18",
+                "hockey"
+            ],
+            "questions_300": [
+                "This NBA term refers to when a player moves without dribbling the ball",
+                "This athlete has won the most olympic medals",
+                "The amount of points awarded in the NFL for obtaining a 'safety'",
+                "The amount of time the NBA 'shot clock' lasts"
+            ],
+            "answers_300": [
+                "travelling",
+                "michael phelps",
+                "2",
+                "24 seconds"
+            ],
+            "questions_400": [
+                "The total amount of numbers that appear on a dartboard",
+                "This is considered the national sport of Japan",
+                "This NBA team has won the most championships",
+                "This boxing term refers to a fighter who is left-handed"
+            ],
+            "answers_400": [
+                "20",
+                "sumo wrestling",
+                "boston celtics",
+                "southpaw"
+            ],
+            "questions_500": [
+                "This country has won the most FIFA world cups",
+                "This was the first MLB player to have his jersey number retired",
+                "The total distance of a full marathon",
+                "This is considered the oldest sport in the world"
+            ],
+            "answers_500": [
+                "brazil",
+                "lou gehrig",
+                "26.2 miles",
+                "wrestling"
+            ]
+        },
+        "Food": {
+            "questions_100": [
+                "This type of cracker is typically used to make s'mores",
+                "This term refers to a person unable to digest milk products",
+                "This vegetable is known to make people cry when it's cut",
+                "This vegetable is the main ingredient in ketchup"
+            ],
+            "answers_100": [
+                "graham cracker",
+                "lactose-Intolerance",
+                "onion",
+                "ketchup"
+            ],
+            "questions_200": [
+                "The term often used to refer to deer meat",
+                "This American city is famous for creating the deep-dish pizza",
+                "The total amount of tablespoons that equal one cup",
+                "This is the main ingredient used to make guacamole"
+            ],
+            "answers_200": [
+                "venison",
+                "chicago",
+                "16",
+                "avocado"
+            ],
+            "questions_300": [
+                "This Canadian dish consists of french fries, gravy and cheese curds",
+                "The term for a person who eats fish but no other meats",
+                "This type of meat is the leading cause of salmonella",
+                "The total amount of items required to make a 'Baker's Dozen'"
+            ],
+            "answers_300": [
+                "poutine",
+                "pescatarian",
+                "chicken",
+                "13"
+            ],
+            "questions_400": [
+                "This was the first vegetable that was grown in space",
+                "This is the type of meat that is used to make spam",
+                "This is the part of the pig that bacon is sourced from",
+                "This is the state where the dish 'Gumbo' originated from"
+            ],
+            "answers_400": [
+                "potato",
+                "pork",
+                "belly",
+                "louisiana"
+            ],
+            "questions_500": [
+                "This European country is credited with creating french fries",
+                "This is the only food that can truly never expire",
+                "This fruit is often referred to as 'The King of Fruits'",
+                "This country is the biggest exporter of coffee beans"
+            ],
+            "answers_500": [
+                "belgium",
+                "honey",
+                "durian",
+                "brazil"
+            ]
+        },
+        "Fashion": {
+            "questions_100": [
+                "This is the type of material used to manufacture jeans",
+                "This company logo is often referred to as 'The Swoosh'",
+                "This fashion company was founded by Gianni Versace",
+                "This item of clothing is often worn on your hands"
+            ],
+            "answers_100": [
+                "denim",
+                "nike",
+                "versace",
+                "gloves"
+            ],
+            "questions_200": [
+                "The total amount of stripes that are in the Adidas logo",
+                "The type of footwear that's manufactured by 'Birkenstocks'",
+                "This fashion brand uses a logo that displays as 'LV'",
+                "The most popular material used for making clothes"
+            ],
+            "answers_200": [
+                "three",
+                "sandals",
+                "louis vuitton",
+                "cotton"
+            ],
+            "questions_300": [
+                "This type of insect produces the material silk",
+                "The country of origin for the fashion house 'Gucci'",
+                "This type of accessory is created by the brand 'Ray-Ban'",
+                "This type of bathing suit debuted in the year 1946"
+            ],
+            "answers_300": [
+                "silkworms",
+                "italy",
+                "sunglasses",
+                "bikini"
+            ],
+            "questions_400": [
+                "This U.S. fashion designer introduced the 'Polo' clothing line",
+                "This annual fashion event is known for its extravagant themes and charity fundraisers",
+                "This is what the company 'DKNY' stands for",
+                "This city is referred to as the fashion capital of the world"
+            ],
+            "answers_400": [
+                "ralph lauren",
+                "met gala",
+                "donna karan new york",
+                "paris"
+            ],
+            "questions_500": [
+                "This fashion brand is credited with creating the trench coat",
+                "This fabric material is created using flax plants",
+                "This street in Manhattan is often referred to as 'Fashion Avenue'",
+                "This country produced the first fashion magazine"
+            ],
+            "answers_500": [
+                "burberry",
+                "linen",
+                "seventh street",
+                "france"
+            ]
+        },
+        "Politics": {
+            "questions_100": [
+                "This person was the first black president of the united states",
+                "This candidate won the 2016 U.S. presidential election",
+                "The scandal involving former U.S. president Richard Nixon",
+                "The total amount of justices that serve on the U.S. supreme court"
+            ],
+            "answers_100": [
+                "barack obama",
+                "donald trump",
+                "watergate",
+                "nine"
+            ],
+            "questions_200": [
+                "The city where the declaration of independence was signed",
+                "This animal is the symbol that represents the U.S. democratic party",
+                "This U.S. president was the only one to serve three terms",
+                "This North Korean leader died in the year 2011"
+            ],
+            "answers_200": [
+                "philadelphia",
+                "donkey",
+                "franklin d. roosevelt",
+                "kim jong-il"
+            ],
+            "questions_300": [
+                "This actor became governor of California in the year 2003",
+                "This candidate won the 2019 U.K. general election to become prime minister",
+                "The members of this alliance during World War II comprised of Japan, Germany and Italy",
+                "The term for the withdrawal of the United Kingdom from the European Union"
+            ],
+            "answers_300": [
+                "arnold schwarzenegger",
+                "boris johnson",
+                "axis powers",
+                "brexit"
+            ],
+            "questions_400": [
+                "This was the vice president during the Bill Clinton administration",
+                "This U.S. president was in office during the start of World War I",
+                "This person became the 16th president of the United States",
+                "This U.S. presidential election year was won by Jimmy Carter"
+            ],
+            "answers_400": [
+                "al gore",
+                "woodrow wilson",
+                "abraham lincoln",
+                "jimmy carter"
+            ],
+            "questions_500": [
+                "This person was the first female prime minister of a European country",
+                "This person was the last leader of the Soviet Union before its dissolution",
+                "This was the first U.S. president to die while serving in office",
+                "This amendment in the U.S. constitution allowed women the ability to vote"
+            ],
+            "answers_500": [
+                "margaret thatcher",
+                "mikhail gorbachev",
+                "william harrison",
+                "19th amendment"
+            ]
+        }
     }
-}]
+]

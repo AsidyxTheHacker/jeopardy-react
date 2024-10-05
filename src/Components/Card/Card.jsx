@@ -7,7 +7,9 @@ export default function Card({ text /* text = point value */ }) {
         event.target.classList.add('card-used', 'card-selected');
         event.target.classList.remove('question');
         document.querySelector('.modal').classList.remove('hidden');
-        document.querySelector('.answer-reveal-button').classList.remove('center-hidden');
+        document.querySelectorAll('.answer-reveal-button, .close-modal-button').forEach(b => {
+            b.classList.remove('center-hidden');
+        });
 
         let questions = document.querySelectorAll('.question');
         questions.forEach(q => { q.classList.add('card-used') });
@@ -19,7 +21,7 @@ export default function Card({ text /* text = point value */ }) {
         let category = event.target.parentNode.firstChild.innerText;
         let question = `questions_${text}`;
         let answer = `answers_${text}`;
-        let randomNum = Math.floor(Math.random() * 3);
+        let randomNum = Math.floor(Math.random() * 4);
 
         if (event.target.classList.contains('double-jeopardy-card')) {
             document.querySelector('.modal-title').innerText = `DAILY DOUBLE! ${text * 2}`

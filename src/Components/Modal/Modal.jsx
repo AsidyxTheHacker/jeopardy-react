@@ -18,7 +18,7 @@ export default function Modal() {
         if (!lever) {
             document.querySelector('.double-jeopardy-card-used').innerText = document.querySelector('.double-jeopardy-card-used').innerText / 2;
             lever = true;
-        }
+        };
     };
 
     const revealAnswer = () => {
@@ -26,7 +26,9 @@ export default function Modal() {
             m.classList.remove('hidden', 'center-hidden');
         });
 
-        document.querySelector('.answer-reveal-button').classList.add('center-hidden');
+        document.querySelectorAll('.answer-reveal-button, .close-modal-button').forEach(b => {
+            b.classList.add('center-hidden');
+        });
     };
 
     const answer = (o) => {
@@ -44,13 +46,22 @@ export default function Modal() {
         hideModal();
     };
 
+    const returnToBoard = () => {
+        document.querySelector('.card-selected').classList.remove('card-used');
+        document.querySelector('.card-selected').classList.add('question');
+        hideModal();
+    };
+
     return (
         <div className="modal hidden">
             <h1 className='modal-title'></h1>
             <h2 className='modal-category'></h2>
             <p className="modal-question"></p>
             <div className="button-container">
-                <button className="answer-reveal-button" onClick={revealAnswer}>Reveal Answer</button>
+                <div className="choice-buttons">
+                    <button className="answer-reveal-button" onClick={revealAnswer}>Reveal Answer</button>
+                    <button className="close-modal-button" onClick={returnToBoard}>Go Back</button>
+                </div>
                 <p className="modal-answer center-hidden"></p>
                 <div className="answer-container hidden">
                     <button className='correct-button' onClick={() => answer('+')}>✔</button>
