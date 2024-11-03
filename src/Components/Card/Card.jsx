@@ -29,6 +29,24 @@ export default function Card({ text /* text = point value */ }) {
             document.querySelector('.modal-title').innerText = `${text} POINT QUESTION`;
         };
 
+        const countdown = () => {
+            if (time == -1) {
+                clearTimeout(timerId);
+                document.querySelector('.time-sfx').play();
+            } else {
+                document.querySelector('.modal-category').innerText = category + ' |' + ` ${time}s`;
+                time--;
+            };
+
+            let modal = document.querySelector('.modal');
+            let answer = document.querySelector('.answer-container');
+            if (modal.classList.contains('hidden') || !answer.classList.contains('hidden')) {
+                clearTimeout(timerId);
+            };
+        };
+        let time = 15;
+        let timerId = setInterval(countdown, 1000);
+
         document.querySelector('.modal-category').innerText = category;
         document.querySelector('.modal-question').innerText = data[0][category][question][randomNum];
         document.querySelector('.modal-answer').innerText = data[0][category][answer][randomNum];

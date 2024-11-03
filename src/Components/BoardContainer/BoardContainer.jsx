@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 export default function BoardContainer() {
 
     let array = data[0].category;
-    let dailyDoubleSFX = document.querySelector('audio');
+    let dailyDoubleSFX = document.querySelector('.double-sfx');
     dailyDoubleSFX.volume = .3;
 
     useEffect(() => {

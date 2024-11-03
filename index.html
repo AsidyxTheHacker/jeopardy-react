@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>Timpardy</title>
   </head>
   <body>
     <div id="root"></div>
     <video id="vid" src="/src/assets/background.mp4" autoplay loop muted></video>
-    <audio src="src/assets/double.mp3"></audio>
+    <audio class="double-sfx" src="src/assets/double.mp3"></audio>
+    <audio class="time-sfx" src="src/assets/time_up.mp3"></audio>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Handwriting';
-    src: url('../../../Handwriting.otf');
-}
-
 .score-card {
     display: flex;
     flex-direction: column;
@@ -39,8 +34,9 @@
 .name {
     background-image: linear-gradient(#0013f0, #000fb8);
     padding: 2.5vh 1vh;
-    font-size: calc(12px + 2vw);
-    font-family: Handwriting;
+    font-size: calc(12px + 1vw);
+    font-family: "Permanent Marker";
+    letter-spacing: .15vw;
     color: white;
     outline: none;
     border: none;
