@@ -6,14 +6,18 @@ import { useState } from 'react';
 
 export default function Header() {
 
-    const [volume, setVolume] = useState(true);
+    const [volume, setVolume] = useState(false);
 
+    let music = document.querySelector('.theme-sfx');
+    music.volume = 0.05;
     function changeVolume() {
         if(volume) {
             setVolume(false)
+            music.pause();
         } else {
             setVolume(true)
-        }
+            music.play();
+        };
     };
 
     return (

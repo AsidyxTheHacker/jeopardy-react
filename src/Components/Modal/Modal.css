@@ -116,6 +116,7 @@
 
 .answer-container button:active {
     box-shadow: none;
+    background-color: rgb(219, 172, 54);
     border: solid rgb(176, 138, 43) calc(.1vw + 2px);
     outline: solid rgb(92, 72, 22) calc(.1vw + 2px);
 }
@@ -130,6 +131,12 @@
     background-color: rgb(172, 68, 68);
     border: solid rgb(112, 44, 44) calc(.1vw + 2px);
     box-shadow: rgb(94, 37, 37) 0 calc(.2vw + 2px) 0;
+}
+
+.swap-button {
+    background-color: rgb(148, 148, 148);
+    border: solid rgb(86, 86, 86) calc(.1vw + 2px);
+    box-shadow: rgb(63, 63, 63) 0 calc(.2vw + 2px) 0;
 }
 
 .choice-buttons {

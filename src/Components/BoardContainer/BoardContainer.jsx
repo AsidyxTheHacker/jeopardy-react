@@ -4,7 +4,7 @@ import './BoardContainer.css';
 import data from '../../assets/data.json';
 import { useEffect } from 'react';
 
-export default function BoardContainer() {
+export default function BoardContainer({ sharedValue }) {
 
     let array = data[0].category;
     let dailyDoubleSFX = document.querySelector('.double-sfx');
@@ -34,7 +34,7 @@ export default function BoardContainer() {
             <Column id="3" />
             <Column id="4" />
             <Column id="5" />
-            <Modal />
+            <Modal sharedValue={sharedValue} />
         </div>
     )
 };

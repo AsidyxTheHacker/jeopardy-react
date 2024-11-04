@@ -32,6 +32,7 @@ export default function Card({ text /* text = point value */ }) {
         const countdown = () => {
             if (time == -1) {
                 clearTimeout(timerId);
+                document.querySelector('.time-sfx').volume = .3;
                 document.querySelector('.time-sfx').play();
             } else {
                 document.querySelector('.modal-category').innerText = category + ' |' + ` ${time}s`;
@@ -47,7 +48,7 @@ export default function Card({ text /* text = point value */ }) {
         let time = 15;
         let timerId = setInterval(countdown, 1000);
 
-        document.querySelector('.modal-category').innerText = category;
+        document.querySelector('.modal-category').innerText = category + ' |' + ' 00s';
         document.querySelector('.modal-question').innerText = data[0][category][question][randomNum];
         document.querySelector('.modal-answer').innerText = data[0][category][answer][randomNum];
     };

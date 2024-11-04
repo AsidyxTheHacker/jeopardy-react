@@ -1,6 +1,6 @@
 import './Modal.css';
 
-export default function Modal() {
+export default function Modal({ sharedValue }) {
 
     let lever = false;
 
@@ -52,6 +52,27 @@ export default function Modal() {
         hideModal();
     };
 
+    const swapScoreUser = () => {
+        let scores = document.querySelectorAll('.score-card');
+        let swapBtn = document.querySelector('.swap-button')
+        scores.forEach(s => s.classList.remove('selected'));
+        switch (sharedValue.id) {
+            case "user1": sharedValue = document.getElementById('user2');
+                swapBtn.innerText = document.querySelector('#user2 input').value;
+                break;
+            case "user2": sharedValue = document.getElementById('user3');
+                swapBtn.innerText = document.querySelector('#user3 input').value;
+                break;
+            case "user3": sharedValue = document.getElementById('user1');
+                swapBtn.innerText = document.querySelector('#user1 input').value
+                break;
+        };
+        if (swapBtn.innerText === '') {
+            swapBtn.innerText = sharedValue.id;
+        }
+        sharedValue.classList.add('selected');
+    };
+
     return (
         <div className="modal hidden">
             <h1 className='modal-title'></h1>
@@ -65,6 +86,7 @@ export default function Modal() {
                 <p className="modal-answer center-hidden"></p>
                 <div className="answer-container hidden">
                     <button className='correct-button' onClick={() => answer('+')}>✔</button>
+                    <button className='swap-button' style={{fontSize: "calc(1.5vw + .5em)"}} onClick={swapScoreUser}>Swap</button>
                     <button className='incorrect-button' onClick={() => answer('-')}>✖</button>
                 </div>
             </div>

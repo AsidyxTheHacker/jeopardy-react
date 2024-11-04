@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Score.css';
 
-export default function Score({ score, id }) {
+export default function Score({ score, id, setSharedValue }) {
 
     const [selected, setSelected] = useState(null);
 
@@ -10,7 +10,6 @@ export default function Score({ score, id }) {
     }, [selected]);
 
     function scoreSelect() {
-
         let scores = document.querySelectorAll('.score-card');
         scores.forEach(s => s.classList.remove('selected'));
         selected.classList.add('selected');
@@ -18,6 +17,7 @@ export default function Score({ score, id }) {
         document.querySelectorAll('.question').forEach((q) => {
             q.classList.remove('card-used');
         });
+        setSharedValue(selected);
     };
 
     return (
