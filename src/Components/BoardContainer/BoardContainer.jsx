@@ -3,12 +3,13 @@ import Modal from '../Modal/Modal';
 import './BoardContainer.css';
 import data from '../../assets/data.json';
 import { useEffect } from 'react';
+import sound from '../../assets/double.mp3';
 
 export default function BoardContainer({ sharedValue }) {
 
     let array = data[0].category;
-    let dailyDoubleSFX = document.querySelector('.double-sfx');
-    dailyDoubleSFX.volume = .3;
+    const audio = new Audio(sound);
+    audio.volume = .3;
 
     useEffect(() => {
         array.sort(() => Math.random() - 0.5);
@@ -21,7 +22,7 @@ export default function BoardContainer({ sharedValue }) {
         document.querySelector(`#column${randomColumn} .question:nth-child(${randomCard})`).classList.add('double-jeopardy-card');
         document.querySelector('.double-jeopardy-card').addEventListener('click', () => {
             let doubleScore = document.querySelector('.double-jeopardy-card').innerText * 2;
-            dailyDoubleSFX.play();
+            audio.play();
             document.querySelector('.double-jeopardy-card').innerText = doubleScore;
             document.querySelector('.double-jeopardy-card').classList.add('double-jeopardy-card-used');
         })

@@ -3,20 +3,22 @@ import volumeOn from '../../assets/volume-on.svg';
 import volumeOff from '../../assets/volume-off.svg';
 import './Header.css';
 import { useState } from 'react';
+import music from '../../assets/jeopardy_theme.mp3';
 
 export default function Header() {
 
     const [volume, setVolume] = useState(false);
 
-    let music = document.querySelector('.theme-sfx');
-    music.volume = 0.05;
+    // const audio = new Audio(music);
+    const [audio, setAudio] = useState(new Audio(music))
+    audio.volume = 0.05;
     function changeVolume() {
-        if(volume) {
+        if (volume) {
             setVolume(false)
-            music.pause();
+            audio.pause();
         } else {
             setVolume(true)
-            music.play();
+            audio.play();
         };
     };
 

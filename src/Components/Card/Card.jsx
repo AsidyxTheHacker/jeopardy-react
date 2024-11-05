@@ -1,5 +1,6 @@
 import './Card.css';
 import data from '../../assets/data.json';
+import sound from '../../assets/time_up.mp3';
 
 export default function Card({ text /* text = point value */ }) {
 
@@ -32,8 +33,9 @@ export default function Card({ text /* text = point value */ }) {
         const countdown = () => {
             if (time == -1) {
                 clearTimeout(timerId);
-                document.querySelector('.time-sfx').volume = .3;
-                document.querySelector('.time-sfx').play();
+                const audio = new Audio(sound);
+                audio.volume = .3;
+                audio.play();
             } else {
                 document.querySelector('.modal-category').innerText = category + ' |' + ` ${time}s`;
                 time--;
