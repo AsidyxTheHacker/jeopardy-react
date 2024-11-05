@@ -37,5 +37,5 @@ export default function BoardContainer({ sharedValue }) {
             <Column id="5" />
             <Modal sharedValue={sharedValue} />
         </div>
-    )
+    );
 };

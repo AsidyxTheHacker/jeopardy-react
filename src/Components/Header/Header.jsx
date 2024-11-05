@@ -8,8 +8,6 @@ import music from '../../assets/jeopardy_theme.mp3';
 export default function Header() {
 
     const [volume, setVolume] = useState(false);
-
-    // const audio = new Audio(music);
     const [audio, setAudio] = useState(new Audio(music))
     audio.volume = 0.05;
     function changeVolume() {
