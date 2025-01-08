@@ -56,5 +56,5 @@ export default function Card({ text /* text = point value */ }) {
 
     return (
         <div className="card card-used question" onClick={clickHandler}>{text}</div>
-    )
+    );
 };

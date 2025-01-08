@@ -14,7 +14,7 @@ export default function BoardContainer({ sharedValue }) {
     useEffect(() => {
         for (let i = 0; i < 5; i++) {
             document.querySelector(`#column${i + 1} .category-title`).innerText = array[i + 1]
-        }
+        };
 
         let randomCard = Math.floor(Math.random() * 5) + 2;
         let randomColumn = Math.floor(Math.random() * 5) + 1;
