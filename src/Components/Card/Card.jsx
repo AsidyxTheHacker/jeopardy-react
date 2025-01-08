@@ -20,9 +20,8 @@ export default function Card({ text /* text = point value */ }) {
         }, 300);
 
         let category = event.target.parentNode.firstChild.innerText;
-        let question = `questions_${text}`;
-        let answer = `answers_${text}`;
-        let randomNum = Math.floor(Math.random() * 4);
+        let question = `question_${text}`;
+        let answer = `answer_${text}`;
 
         if (event.target.classList.contains('double-jeopardy-card')) {
             document.querySelector('.modal-title').innerText = `DAILY DOUBLE! ${text * 2}`
@@ -51,8 +50,8 @@ export default function Card({ text /* text = point value */ }) {
         let timerId = setInterval(countdown, 1000);
 
         document.querySelector('.modal-category').innerText = category + ' |' + ' 00s';
-        document.querySelector('.modal-question').innerText = data[0][category][question][randomNum];
-        document.querySelector('.modal-answer').innerText = data[0][category][answer][randomNum];
+        document.querySelector('.modal-question').innerText = data[0][category][question];
+        document.querySelector('.modal-answer').innerText = data[0][category][answer];
     };
 
     return (

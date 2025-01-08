@@ -12,7 +12,6 @@ export default function BoardContainer({ sharedValue }) {
     audio.volume = .3;
 
     useEffect(() => {
-        array.sort(() => Math.random() - 0.5);
         for (let i = 0; i < 5; i++) {
             document.querySelector(`#column${i + 1} .category-title`).innerText = array[i + 1]
         }
